@@ -3,6 +3,7 @@ package me.marcelohdez.define4me;
 import javax.swing.*;
 
 public class Define4Me {
+    /** Make application look native */
     private static void setLookAndFeel() {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());

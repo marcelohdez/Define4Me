@@ -23,15 +23,15 @@ public class DefineController {
     }
 
     public void initialize() {
-        // Show window in center of screen
-        view.pack();
-        view.setLocationRelativeTo(null);
+        view.pack(); // Make all elements fit perfectly
+        view.setLocationRelativeTo(null); // Place window in center of screen
         view.setVisible(true);
     }
 
     private void defineWords() {
         var sb = new StringBuilder();
 
+        // Define each word and add to sb as separate lines in the format "WORD - DEFINITION"
         for (int i = 0; i < model.getListModel().size(); i++) {
             var word = model.getListModel().get(i);
 
@@ -53,7 +53,7 @@ public class DefineController {
             e.printStackTrace();
         }
 
-        return "No definition found!";
+        return "No definition found!"; // Default value if request times out or the json parsing fails
     }
 
     private void pasteWords() {
