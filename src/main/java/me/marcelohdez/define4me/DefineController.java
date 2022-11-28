@@ -60,6 +60,8 @@ public class DefineController {
         try {
             var pastedText = Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor).toString();
             var words = pastedText.lines().toList();
+
+            model.getListModel().clear(); // Clear list before pasting new words
             model.getListModel().addAll(words);
             view.getTabbedPane().setSelectedIndex(0); // Switch to words tab
         } catch (UnsupportedFlavorException | IOException e) {
