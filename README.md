@@ -6,6 +6,10 @@ pattern through the Swing GUI library. The definitions are obtained through
 meetDeveloper's [free dictionary API] and parsed with the [Jackson JSON
 library].
 
+## Showcase
+#### _Define4Me in production:_
+<img src="https://user-images.githubusercontent.com/76508651/230754646-53ed86c7-0c9c-415b-9f6c-5acda76ce5b6.gif" width="55%">
+
 ## Building from source
 After installing a [JDK] version 17 or higher, you may download the source code,
 `cd` into it with your desired terminal application and run
